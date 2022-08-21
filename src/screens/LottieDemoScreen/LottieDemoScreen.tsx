@@ -10,6 +10,7 @@ import getStyles from './LottieDemoScreen.style';
 const animation = require('../../ui/animations/WorkInProgress.json');
 
 const LottieDemoScreen: FC = () => {
+  // MARK - Styles
   const theme = useTheme();
   const styles = useMemo(() => getStyles(theme), [theme]);
 

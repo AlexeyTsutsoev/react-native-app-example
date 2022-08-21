@@ -59,3 +59,47 @@ export const paddings = {
     xSmall: hp(4),
   },
 };
+
+/**
+ * Default border radius
+ */
+export const radiuses = {
+  circle: 100,
+  extraLarge: 50,
+  large: 25,
+  medium: 15,
+  small: 10,
+  xSmall: 5,
+};
+
+/**
+ * Default font sizes
+ */
+export const fontSizes = {
+  h1: hp(32),
+  h2: hp(28),
+  h3: hp(24),
+  h4: hp(22),
+  h5: hp(20),
+  h6: hp(18),
+  lg: hp(16),
+  md: hp(14),
+  sm: hp(12),
+  xSm: hp(10),
+};
+
+/**
+ * Default line heights
+ */
+export const lineHeights = {
+  h1: hp(34),
+  h2: hp(30),
+  h3: hp(26),
+  h4: hp(24),
+  h5: hp(22),
+  h6: hp(20),
+  lg: hp(18),
+  md: hp(16),
+  sm: hp(14),
+  xSm: hp(12),
+};

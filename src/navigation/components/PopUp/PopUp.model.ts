@@ -1,11 +1,11 @@
-import AlertService from "../../../utils/services/AlertService";
-import FeedbackService from "../../../utils/services/FeedbackService";
+import AlertService from '../../../utils/services/AlertService';
+import FeedbackService from '../../../utils/services/FeedbackService';
 
 export type PopUpItemType = {
   title: string;
   onPress?: () => void;
   color?: string;
-}
+};
 
 // MARK - Temp
 // TODO - move to react-context
@@ -22,4 +22,4 @@ export const POP_UP_ITEMS: PopUpItemType[] = [
     title: 'impact',
     onPress: () => FeedbackService.lightImpact(),
   },
-]
+];

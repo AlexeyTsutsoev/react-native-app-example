@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+
 import {
   createStackNavigator,
   StackNavigationOptions,
 } from '@react-navigation/stack';
+
 import LottieDemoScreen from '../screens/LottieDemoScreen/LottieDemoScreen';
 import MainHeader from './components/MainHeader/MainHeader';
 
@@ -16,7 +18,7 @@ export type HomeStackParamList = {
 };
 
 /**
- * You can use destructurization of just Object
+ * You can use destructurization or just Object
  */
 const { Navigator, Screen } = createStackNavigator<HomeStackParamList>();
 

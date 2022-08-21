@@ -30,6 +30,7 @@ const PopUp: FC<Props> = ({ isVisible }) => {
     };
   });
 
+  // MARK - Callbacks
   const shownToggle = useCallback(async () => {
     if (isVisible) {
       setShown(true);
@@ -39,13 +40,14 @@ const PopUp: FC<Props> = ({ isVisible }) => {
       await PromiseService.sleep(500);
       setShown(false);
     }
-  }, [isVisible]);
+  }, [isVisible, opacity]);
 
   // MARK - Effects
   useEffect(() => {
     shownToggle();
   }, [shownToggle]);
 
+  // MARK - Renders
   if (!isSHown) {
     return null;
   }

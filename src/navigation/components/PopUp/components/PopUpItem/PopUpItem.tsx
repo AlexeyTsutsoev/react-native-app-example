@@ -9,8 +9,8 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import AnimatedPress from '../../../../../components/AnimatedPress/AnimatedPress';
-import { PopUpItemType } from '../../PopUp.model';
 
+import { PopUpItemType } from '../../PopUp.model';
 import getStyles from './PopUpItem.style';
 
 type Props = {
@@ -37,7 +37,7 @@ const PopUpItem: FC<Props> = ({ item, index }) => {
       duration: 1000 / (index + 1),
       easing: Easing.inOut(Easing.exp),
     });
-  }, []);
+  }, [index, position]);
 
   return (
     <Animated.View style={animatedItemStyle}>

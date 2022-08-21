@@ -1,9 +1,10 @@
-import { StyleSheet } from "react-native";
-import { hp } from "../../../ui/theme/responsive";
+import { StyleSheet } from 'react-native';
+
+import { hp } from '../../../ui/theme/responsive';
 
 const styles = StyleSheet.create({
   container: {
-    position: "absolute",
+    position: 'absolute',
     top: 0,
     bottom: 0,
     left: 0,

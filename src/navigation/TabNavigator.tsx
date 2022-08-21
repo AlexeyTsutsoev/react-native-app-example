@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+
 import {
   BottomTabNavigationOptions,
   createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
+
 import HomeStack from './HomeStack';
 import TabBar from './components/TabBar/TabBar';
 

@@ -9,8 +9,8 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import useTheme from '../../../hooks/useTheme';
 import PopUp from '../PopUp/PopUp';
+import useTheme from '../../../hooks/useTheme';
 
 import TAB_ITEMS, { TabItem } from './tabBar.model';
 import getStyles from './TabBar.style';
@@ -18,6 +18,7 @@ import getStyles from './TabBar.style';
 const TabBar: FC<BottomTabBarProps> = ({ state, navigation }) => {
   // MARK - States
   const [isShowPopUp, setShowPopUp] = useState(false);
+
   // MARK - Styles
   const theme = useTheme();
   const insents = useSafeAreaInsets();
@@ -51,7 +52,7 @@ const TabBar: FC<BottomTabBarProps> = ({ state, navigation }) => {
     } else {
       rotation.value = withTiming(0);
     }
-  }, [isShowPopUp]);
+  }, [isShowPopUp, rotation]);
 
   return (
     <>
