@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { SvgProps } from 'react-native-svg';
+
 import { RootAppParamList } from '../../TabNavigator';
 import Icon from '../../../ui/assets/svgs/bottom-icon.svg';
 import Plus from '../../../ui/assets/svgs/icon-plus.svg';
