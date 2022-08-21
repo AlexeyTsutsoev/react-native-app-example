@@ -21,7 +21,9 @@ const tabOptions: BottomTabNavigationOptions = {
 
 const TabNavigator: FC = () => {
   return (
-    <Tab.Navigator screenOptions={tabOptions} tabBar={TabBar}>
+    <Tab.Navigator
+      screenOptions={tabOptions}
+      tabBar={props => <TabBar {...props} />}>
       <Tab.Screen name="HomeNavigator" component={HomeStack} />
       <Tab.Screen name="StoreNavigation" component={HomeStack} />
       <Tab.Screen name="OrdersNavigation" component={HomeStack} />
