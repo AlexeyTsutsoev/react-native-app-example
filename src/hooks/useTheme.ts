@@ -1,4 +1,5 @@
 import { useColorScheme } from 'react-native';
+
 import colors from '../ui/theme/colors';
 
 const useTheme = () => {
